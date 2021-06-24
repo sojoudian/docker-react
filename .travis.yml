@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t marley/docker-react -f Dockerfile.dev .
+  - docker build -t maziar/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run marley/docker-react npm run test -- --coverage
+  - docker run maziar/docker-react npm run test -- --coverage
